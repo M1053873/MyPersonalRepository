@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="https://mindtree.com/studentssoap"
+ targetNamespace="https://mindtree.com/studentssoap" 
+ elementFormDefault="qualified">
+ 
+ <xs:element name="addStudent">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="studentId" type="xs:int"></xs:element>
+ <xs:element name="studentName" type="xs:string"></xs:element>
+ <xs:element name="marks" type="xs:int"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="getStudentById">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="studentId" type="xs:int"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="getStudentResponse">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="studentName" type="xs:string"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="getAllStudents">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="students" type="tns:Student" minOccurs="0" maxOccurs="unbounded"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="updateStudent">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="studentId" type="xs:int"></xs:element>
+ <xs:element name="marks" type="xs:int"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:element name="deleteStudent">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="studentId" type="xs:int"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ <xs:complexType name="Student">
+ <xs:sequence>
+ <xs:element name="studentId" type="xs:int"></xs:element>
+ <xs:element name="studentName" type="xs:string"></xs:element>
+ <xs:element name="marks" type="xs:int"></xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:schema>

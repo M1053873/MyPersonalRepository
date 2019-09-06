@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ss="https://mindtree.com/studentssoap">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ss:addStudent>
+        	<ss:studentId>1</ss:studentId>
+        	<ss:studentName>Moumita</ss:studentName>
+        	<ss:marks>90</ss:marks>
+        </ss:addStudent>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Header/>
+<soapenv:Body>
+<ss:getAllStudents/>
+</soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Header/>
+    <soapenv:Body>
+    <ss:updateStudent>
+    <ss:studentId>1</ss:studentId>
+    <ss:marks>75</ss:marks>
+    </ss:updateStudent>
+    </soapenv:Body>
+    </soapenv:Envelope>
+    
+    
+    <soapenv:Header/>
+    <soapenv:Body>
+    <ss:deleteStudent>
+    <ss:studentId>1</ss:studentId>
+    </ss:deleteStudent>
+    </soapenv:Body>
+    </soapenv:Envelope>
+    
+   <soapenv:Header/>
+    <soapenv:Body>
+    <ss:getStudentById>
+    <ss:studentId>1</ss:studentId>
+    </ss:getStudentById>
+    </soapenv:Body>
+    </soapenv:Envelope>  
+    
+    
