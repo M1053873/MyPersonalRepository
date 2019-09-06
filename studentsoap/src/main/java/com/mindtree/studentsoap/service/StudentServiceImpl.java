@@ -17,7 +17,7 @@ public class StudentServiceImpl
 		students.add(student);
 	}
 	
-	public List<Student> getAllStudent()
+	public List<Student> getAllStudents()
 	{
 		return students;
 	}
