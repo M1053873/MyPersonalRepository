@@ -11,6 +11,7 @@ public class MessageReceiver {
 	public void receiveMessage(String message)
 	{
 		System.out.println("Message Received\n\n");
+		System.out.println("done");
 	      System.out.println("Message received from Queue:"+message);
 	}
 
