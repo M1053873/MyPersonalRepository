@@ -41,7 +41,7 @@ public class StudentEndpoint
 	public GetAllStudents getAllStudents(@RequestPayload GetAllStudents getAllStudents)
 	{
 		List<Student> students=new ArrayList<>();
-		students=sv.getAllStudents();
+		students=sv.getAllStudent();
 		getAllStudents.getStudents().addAll(students);
 		return getAllStudents;
 	}
